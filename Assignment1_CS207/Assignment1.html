@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    
+    
+<div class="dropdown">
+    <button id='bt2' >Home</button> 
+    <button class="dropbtn">Links</button>
+    <div class="dropdown-content">
+    
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.iitmandi.ac.in">IIT Mandi</a>
+    
+    
+    </div>
+</div>
+<div id='container'>
+<h1 id='heading'>Assignment Number 1</h1>
+    <p id='welcome'>Welcome to CS 207</p>
+    <div id="addition">
+        <span>0</span>
+        <input type="range" id='first'>
+        <span>100</span>
+        <span>+</span>
+        <input type="number" id='second'>
+        <button onclick="add()">=</button>
+        <span id='result'></span>
+    </div>
+    <br>
+    <a href="#bottom" id='jump'>Jump Link</a>
+    <table style="width:0%"4>
+        <tr>
+          <th>No.</th>
+          <th>Name</th> 
+          <th>Email</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Clark Kent</td>
+          <td>clarkkent@mail.com</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Peter Parker</td>
+          <td>peterparker@mail.com</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Bruce Wayne</td>
+          <td>brucewaynw@mail.com</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Tony Stark</td>
+            <td>tonystark@mail.com</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Bucky Barnes</td>
+            <td>buckybarnes@mail.com</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Reed Richards</td>
+            <td>reedrichards@mail.com</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>J'onn J'onzz</td>
+            <td>Jonnjonzz@mail.com</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Sheira Sanders</td>
+            <td>sheirasanders@mail.com</td>
+          </tr>
+      </table>
+    <div id="audiof">
+        <audio controls>
+            <source src="horse.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <hr>
+    <div class="con">Made 28th February,2021</div>
+    <div class="con">For CS207</div>
+   <div id="lastdiv"> <a href="#" name='bottom' id="last">END</a> </div>
+
+</div>
+</body>
+<script>
+    function add(val) {
+        a = Number(document.getElementById("first").value);
+        b = Number(document.getElementById("second").value);
+        c = a + b;
+        document.getElementById('result').innerHTML = c;
+
+    }
+</script>
+
+</html>
